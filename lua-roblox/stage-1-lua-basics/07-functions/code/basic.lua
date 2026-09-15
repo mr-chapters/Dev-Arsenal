@@ -13,7 +13,7 @@ Put the Script in ServerScriptService, then press F5 to play.
 
 Use `local function` to define one.
 
-```
+```lua
 local function greet()
     print("Hello, Roblox!")
 end
@@ -28,13 +28,13 @@ It only runs when you call the function.
 
 Add `()` after the name.
 
-```
+```lua
 greet()
 ```
 
 Output:
 
-```
+```text
 Hello, Roblox!
 ```
 
@@ -44,7 +44,7 @@ The parentheses are what tell Lua to run the function.
 
 ## Calling Many Times
 
-```
+```lua
 local function greet()
     print("Hello!")
 end
@@ -56,7 +56,7 @@ greet()
 
 Output:
 
-```
+```text
 Hello!
 Hello!
 Hello!
@@ -68,7 +68,7 @@ Write once, call many times.
 
 ## A Function That Says Your Name
 
-```
+```lua
 local function sayName()
     local name = "Alex"
     print("My name is " .. name)
@@ -79,7 +79,7 @@ sayName()
 
 Output:
 
-```
+```text
 My name is Alex
 ```
 
@@ -87,7 +87,7 @@ My name is Alex
 
 ## A Function That Draws a Line
 
-```
+```lua
 local function drawLine()
     print("=":rep(30))
 end
@@ -101,7 +101,7 @@ drawLine()
 
 Output:
 
-```
+```text
 ==============================
 Section 1
 ==============================
@@ -115,7 +115,7 @@ Handy for formatting output.
 
 ## A Function That Counts
 
-```
+```lua
 local function countToFive()
     for i = 1, 5 do
         print(i)
@@ -127,7 +127,7 @@ countToFive()
 
 Output:
 
-```
+```text
 1
 2
 3
@@ -139,7 +139,7 @@ Output:
 
 ## A Function That Rolls a Die
 
-```
+```lua
 local function rollDie()
     local roll = math.random(1, 6)
     print("You rolled a " .. roll)
@@ -156,7 +156,7 @@ Each call gives a different result.
 
 ## Calling a Function Inside Another
 
-```
+```lua
 local function greet()
     print("Hello")
 end
@@ -171,7 +171,7 @@ startGame()
 
 Output:
 
-```
+```text
 Hello
 Game starting
 ```
@@ -182,9 +182,9 @@ Game starting
 
 A function must be defined before it is called.
 
-```
--- This works:
+This works:
 
+```lua
 local function hi()
     print("hi")
 end
@@ -192,9 +192,9 @@ end
 hi()
 ```
 
-```
--- This does not:
+This does not:
 
+```lua
 hi()      -- ERROR, hi is not defined yet
 
 local function hi()
@@ -208,7 +208,7 @@ Always define first, call later.
 
 ## Local vs Global Functions
 
-```
+```lua
 local function localFunc()
     print("I am local")
 end
