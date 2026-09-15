@@ -1,3 +1,7 @@
+
+# math-functions.lua
+
+```lua
 -- math-functions.lua
 -- Lesson 04 - Math
 -- The math library in Lua.
@@ -283,3 +287,4 @@ end
 -- - You can combine functions.
 -- - Clamp keeps values in range.
 -- - Round to decimals is a common custom function.
+```
